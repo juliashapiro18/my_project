@@ -1,0 +1,19 @@
+----
+title: "Suicidal Thoughts of Undergraduate Students at Emmanuel College"
+author: "Julia Shapiro"
+output: html_document
+---
+
+```{r, include = FALSE}
+here::i_am("Rmd/report.Rmd")
+knitr::opts_knit$set(root.dir = here::here())
+```
+
+
+
+## Figure
+
+
+```{r, echo = FALSE}
+knitr::include_graphics(here::here("figs", "barplot_suicidalthoughts.png"))
+```
