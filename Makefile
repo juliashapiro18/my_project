@@ -8,5 +8,6 @@ figs/barplot_suicidalthoughts.png: R/make_barplot_suicidalthoughts.R R/finaldata
 	Rscript R/make_barplot_suicidalthoughts.R
 
 #Rule for making the report
-Rmd/report.html: R/finaldata.txt Rmd/report.Rmd figs/barplot_suicidalthoughts.png
+output/report.html: Rmd/report.html R/finaldata.txt Rmd/report.Rmd figs/barplot_suicidalthoughts.png
 	Rscript -e "rmarkdown::render('Rmd/report.Rmd')"
+	mv Rmd/report.html output/report.html
