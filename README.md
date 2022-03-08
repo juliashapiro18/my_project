@@ -7,7 +7,7 @@ For my project, I will analyze undergraduate suicide attempt data collected from
 To execute the analysis using Docker, first pull the image from Docker hub using
 
 ```bash
-docker pull 16ewu/info550_project
+docker pull juliashapiro18/please_work
 ```
 To build the image and report, run
 
